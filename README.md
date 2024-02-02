@@ -1,6 +1,6 @@
 # QnABot on AWS
 
-[![Launch](https://img.shields.io/badge/Launch%20with%20CodeCatalyst-%F0%9F%9A%80-8A2BE2)](https://integ.stage.quokka.codes/spaces/blueprints/blueprints/%40amazon-codecatalyst%2Fblueprints.launch-blueprint/publishers/ae796a3f-a165-4125-aefe-2d2d494de859/versions/0.3.99/projects/create?options=%7B%22sourceRepository%22%3A%22https%3A%2F%2Fgithub.com%2Faws-solutions%2Fqnabot-on-aws%22%2C%22destinationRepositoryName%22%3A%22qnabot-on-aws%22%2C%22deployment%22%3A%7B%22containerImage%22%3A%22public.ecr.aws%2Famazonlinux%2Famazonlinux%3A2023%22%2C%22buildSteps%22%3A%5B%22yum%20install%20-y%20nodejs%20make%20git%22%2C%22npm%20install%22%2C%22npm%20run%20config%22%2C%22npm%20run%20boostrap%22%2C%22npm%20run%20up%22%5D%7D%7D)
+[![Launch](https://img.shields.io/badge/Launch%20with%20CodeCatalyst-%F0%9F%9A%80-8A2BE2)](https://integ.stage.quokka.codes/spaces/blueprints/blueprints/%40amazon-codecatalyst%2Fblueprints.launch-blueprint/publishers/ae796a3f-a165-4125-aefe-2d2d494de859/versions/0.3.100/projects/create?options=%7B%22sourceRepository%22%3A%22https%3A%2F%2Fgithub.com%2Faws-solutions%2Fqnabot-on-aws%22%2C%22destinationRepositoryName%22%3A%22qnabot-on-aws%22%2C%22deployment%22%3A%7B%22containerImage%22%3A%22public.ecr.aws%2Famazonlinux%2Famazonlinux%3A2023%22%2C%22buildSteps%22%3A%5B%22yum%20install%20-y%20nodejs%20make%20git%22%2C%22npm%20install%22%2C%22npm%20run%20config%22%2C%22npm%20run%20boostrap%22%2C%22npm%20run%20up%22%5D%7D%7D)
 
 ## Overview
 
