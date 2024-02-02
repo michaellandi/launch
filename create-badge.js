@@ -1,6 +1,6 @@
 #!/bin/node
 
-const version = '0.3.98';
+const version = '0.3.99';
 
 const encoded = encodeURIComponent(
   JSON.stringify({
