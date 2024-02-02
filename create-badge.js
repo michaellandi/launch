@@ -1,12 +1,20 @@
 #!/bin/node
 
-const version = '0.3.64';
+const version = '0.3.98';
 
 const encoded = encodeURIComponent(
   JSON.stringify({
-    repository: 'https://github.com/aws-solutions/quota-monitor-for-aws.git',
+    sourceRepository: 'https://github.com/aws-solutions/qnabot-on-aws',
+    destinationRepositoryName: 'qnabot-on-aws',
     deployment: {
-      cloudFormationTemplate: 'deployment/quota-monitor-hub.template',
+      containerImage: 'public.ecr.aws/amazonlinux/amazonlinux:2023',
+      buildSteps: [
+        'yum install -y nodejs make git',
+        'npm install',
+        'npm run config',
+        'npm run boostrap',
+        'npm run up',
+      ],
     },
   })
 );
