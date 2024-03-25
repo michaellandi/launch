@@ -12,7 +12,7 @@ const encoded = encodeURIComponent(
         'yum install -y nodejs make git',
         'npm install',
         'npm run config',
-        'npm run boostrap',
+        'npm run bootstrap',
         'npm run up',
       ],
     },
@@ -21,5 +21,5 @@ const encoded = encodeURIComponent(
 );
 
 console.log(
-  `[![Launch](https://img.shields.io/badge/Launch%20with%20CodeCatalyst-%F0%9F%9A%80-8A2BE2)](https://integ.stage.quokka.codes/launch?blueprintName=%40amazon-codecatalyst%2Fblueprints.launch-blueprint&options=${encoded})`
+  `https://integ.stage.quokka.codes/launch?blueprintName=%40amazon-codecatalyst%2Fblueprints.launch-blueprint&options=${encoded}`
 );
