@@ -24,7 +24,7 @@ Actions:
     Configuration:
       Steps:
         - Run: ls -la
-  deploy:
+  deploy-gamma:
     Identifier: aws/build-beta@v1
     Inputs:
       Sources: []
@@ -47,4 +47,28 @@ Actions:
         Image: public.ecr.aws/amazonlinux/amazonlinux:2023
         Registry: ECR
     Environment:
-      Name: default_environment
+      Name: gamma_environment
+  deploy-prod:
+    Identifier: aws/build-beta@v1
+    Inputs:
+      Sources: []
+      Artifacts:
+        - src
+      Variables:
+        - Name: LAUNCH_OPTIONS_region
+    Outputs:
+      AutoDiscoverReports:
+        Enabled: false
+        ReportNamePrefix: rpt
+    Configuration:
+      Steps:
+        - Run: yum install -y nodejs make git
+        - Run: npm install
+        - Run: npm run config
+        - Run: npm run boostrap
+        - Run: npm run up
+      Container:
+        Image: public.ecr.aws/amazonlinux/amazonlinux:2023
+        Registry: ECR
+    Environment:
+      Name: prod_environment
