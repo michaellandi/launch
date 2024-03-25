@@ -48,6 +48,3 @@ Actions:
         Registry: ECR
     Environment:
       Name: default_environment
-      Connections:
-        - Name: BlueprintCanary
-          Role: No role selected
