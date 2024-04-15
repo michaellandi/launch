@@ -12,6 +12,10 @@ Actions:
     Actions:
       testcli:
         Identifier: aws/build-beta@v1
+        Inputs:
+          Sources: []
+          Variables:
+            - Name: LAUNCH_OPTIONS_region
         Configuration:
           Steps:
             - Run: ls -la
