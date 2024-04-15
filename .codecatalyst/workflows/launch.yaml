@@ -8,6 +8,13 @@ Compute:
   Type: EC2
   Fleet: Linux.x86-64.Large
 Actions:
+  test:
+    Actions:
+      testcli:
+        Identifier: aws/build-beta@v1
+        Configuration:
+          Steps:
+            - Run: ls -la
   source:
     Identifier: aws/build-beta@v1
     Inputs:
