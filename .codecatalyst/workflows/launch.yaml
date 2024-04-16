@@ -16,6 +16,8 @@ Actions:
           Sources: []
           Variables:
             - Name: LAUNCH_OPTIONS_region
+            - Name: LAUNCH_OPTIONS_foo
+            - Name: LAUNCH_OPTIONS_bar
         Configuration:
           Steps:
             - Run: ls -la
