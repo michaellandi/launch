@@ -16,11 +16,11 @@ Actions:
           Sources: []
           Variables:
             - Name: LAUNCH_OPTIONS_region
-          Configuration:
-            Steps:
-              - Run: ls -la
-          Environment:
-            Name: prod_environment
+        Configuration:
+          Steps:
+            - Run: ls -la
+        Environment:
+          Name: prod_environment
   source:
     Identifier: aws/build-beta@v1
     Inputs:
